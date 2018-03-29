@@ -3,7 +3,7 @@ var reg = /[a-z]/ig;
 const inputs = document.querySelectorAll('input');
 
 const patterns = {
-  firstName:/^([a-z- \.\u0080-\uFFFF]|[a-z \.\u0080-\uFFFF])+$/i,
+  firstName:/^(([a-z-+()"" \.\u0080-\uFFFF])\w{0,2})+$/i,
   lastName:/^([a-z- \.\u0080-\uFFFF]|[a-z \.\u0080-\uFFFF])+$/i,
   email:/^([a-z\u0080-\uFFFF\d.-]+)@([a-z\u0080-\uFFFF\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/i,
   date:/^(3[01]|[12][0-9]|0?[1-9])\.(1[012]|0?[1-9])\.((?:19|20)\d{2})$/,
