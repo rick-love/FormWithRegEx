@@ -7,34 +7,34 @@
   </head>
   <body>
     <div class="container">
-      <p>My Regex Validator</p>
+      <h1>Form with Regex validation</h1>
 
 
 
       <form class="">
         <input type="text" name="firstName" placeholder="First Name">
-        <p>First name can't be null or contain 2 consecutive spaces or spaces before or after a hyphen.</p>
+        <p>First name can't be null, contain 2 consecutive spaces/special characters, 3 consecutive numbers or spaces before + after a hyphen.</p>
 
         <input type="text" name="lastName" placeholder="Last Name" value="">
-        <p>Last name can't be null or contain 2 consecutive spaces or spaces before or after a hyphen.</p>
+        <p>Last name can't be null, contain 2 consecutive spaces/special characters, 3 consecutive numbers or spaces before + after a hyphen.</p>
 
         <input type="text" name="maidenName" placeholder="Maiden Name" value="">
-        <p>Maiden name can't be null or contain 2 consecutive spaces or spaces before or after a hyphen.</p>
+        <p>Maiden name can't be null, contain 2 consecutive spaces/special characters, 3 consecutive numbers or spaces before + after a hyphen.</p>
 
         <input type="text" name="dateOfBirth" placeholder="Date">
         <p>Must be International Date Format tt.mm.yyyy</p>
 
         <input type="text" name="placeOfBirth" placeholder="Place of Birth">
-        <p>Place of Birth can't be null or contain 2 consecutive spaces or spaces before or after a hyphen.</p>
+        <p>Place of Birth can't be null, contain 2 consecutive spaces/special characters, 3 consecutive numbers or spaces before + after a hyphen.</p>
 
         <input type="text" name="postalCode" placeholder="Postal Code">
         <p>Postal Code must range from 01000 - 99999</p>
 
         <input type="text" name="city" placeholder="City" value="">
-        <p>City can't be null or contain 2 consecutive spaces or spaces before or after a hyphen.</p>
+        <p>City can't be null, contain 2 consecutive spaces/special characters, 3 consecutive numbers or spaces before + after a hyphen.</p>
 
         <input type="text" name="state" placeholder="State" value="">
-        <p>State can't be null or contain 2 consecutive spaces or spaces before or after a hyphen.</p>
+        <p>State can't be null, contain 2 consecutive spaces/special characters, 3 consecutive numbers or spaces before + after a hyphen.</p>
 
         <input type="text" name="telephone" placeholder="telephone">
         <p>Telephone format is +49-(0)nn(n)-nnnnnnn</p>
@@ -52,7 +52,7 @@
         <p>Social Insurance ID format is nnn1nnn[A-Z]nnn</p>
 
         <input type="text" name="taxId" placeholder="Tax Id">
-        <p>Tax Id format - nnnnnnnnnnn(11)</p>
+        <p>Tax Id format - nnnnnnnnnnn(11 digits)</p>
 
         <input type="text" name="passportValidDate" placeholder="Passport Valid Until">
         <p>Must be International Date Format tt.mm.yyyy</p>
@@ -64,19 +64,19 @@
         <p>Must be International Date Format tt.mm.yyyy</p>
 
         <input type="text" name="maxHours" placeholder="Max Number of Hours">
-        <p>Max Number of hours format is nn,nn and must be <39.</p>
+        <p>Max Number of hours format is nn:nn and must be <39.</p>
 
         <input type="text" name="cityOfHealthInsurance" placeholder="City of Health Insurance" value="">
-        <p>City of Health Insurance can't be null or contain 2 consecutive spaces, special characters or have spaces before or after a hyphen.</p>
+        <p>City of Health Insurance can't be null, contain 2 consecutive spaces/special characters, 3 consecutive numbers or spaces before + after a hyphen.</p>
 
         <input type="text" name="previousRestaurant" placeholder="Previous Restaurant(City and Address)" value="">
-        <p>Previous Restaurant(City and Address) can't be null or contain 2 consecutive spaces, special characters or have spaces before or after a hyphen.</p>
+        <p>Previous Restaurant(City and Address) can't be null, contain 2 consecutive spaces/special characters, 3 consecutive numbers or spaces before + after a hyphen.</p>
 
         <input type="text" name="timeFrom" placeholder="Time from">
-        <p>Time format is nn,nn</p>
+        <p>Time format is nn:nn</p>
 
         <input type="text" name="timeUntil" placeholder="Time Until">
-        <p>Time format is nn,nn</p>
+        <p>Time format is nn:nn</p>
 
         <input type="text" name="dateFrom" placeholder="Date From">
         <p>Must be International Date Format tt.mm.yyyy</p>
@@ -88,13 +88,13 @@
         <p>IBAN must start with 2 Capital Letters followed by (10 - 35) digits (No spaces or special Characters)</p>
 
         <input type="text" name="time" placeholder="Time Entered">
-        <p>Time must be in military format - 01:00 / 13:45</p>
+        <p>Time format is nn:nn</p>
 
         <input type="text" name="wage" placeholder="wage">
-        <p>Wage format = (1|2)[0-9],[0-9][0-9]</p>
+        <p>Wage format = nn,nn</p>
 
         <input type="text" name="emergencyContactName" placeholder="Emergency Contact">
-        <p>Emergency Contact can't contain numbers, invalid charachters or be null</p>
+        <p>Emergency Contact can't be null, contain 2 consecutive spaces/special characters, 3 consecutive numbers or spaces before + after a hyphen.</p>
 
       </form>
     </div>
