@@ -13,31 +13,79 @@
 
       <form class="">
         <input type="text" name="firstName" placeholder="First Name">
-        <p>First Name can't contain numbers, invalid charachters or be null</p>
+        <p>First name can't be null or contain 2 consecutive spaces or spaces before or after a hyphen.</p>
 
         <input type="text" name="lastName" placeholder="Last Name" value="">
-        <p>Last Name can't contain numbers or be null</p>
+        <p>Last name can't be null or contain 2 consecutive spaces or spaces before or after a hyphen.</p>
+
+        <input type="text" name="maidenName" placeholder="Maiden Name" value="">
+        <p>Maiden name can't be null or contain 2 consecutive spaces or spaces before or after a hyphen.</p>
+
+        <input type="text" name="dateOfBirth" placeholder="Date">
+        <p>Must be International Date Format tt.mm.yyyy</p>
+
+        <input type="text" name="placeOfBirth" placeholder="Place of Birth">
+        <p>Place of Birth can't be null or contain 2 consecutive spaces or spaces before or after a hyphen.</p>
+
+        <input type="text" name="postalCode" placeholder="Postal Code">
+        <p>Postal Code must range from 01000 - 99999</p>
+
+        <input type="text" name="city" placeholder="City" value="">
+        <p>City can't be null or contain 2 consecutive spaces or spaces before or after a hyphen.</p>
+
+        <input type="text" name="state" placeholder="State" value="">
+        <p>State can't be null or contain 2 consecutive spaces or spaces before or after a hyphen.</p>
+
+        <input type="text" name="telephone" placeholder="telephone">
+        <p>Telephone format is +49-(0)nn(n)-nnnnnnn</p>
 
         <input type="text" name="email" placeholder="email">
         <p>Email must be a valid address, e.g. me@mydomain.com</p>
 
-        <input type="password" name="password" placeholder="password" value="">
+<!--    <input type="password" name="password" placeholder="password" value="">
         <p>Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
+-->
+        <input type="text" name="numberOfChildren" placeholder="Number of Children">
+        <p>Number of children must be <20.</p>
 
-        <input type="text" name="telephone" placeholder="telephone">
-        <p>Telephone must begin with 0</p>
+        <input type="text" name="socialInsuranceId" placeholder="Social Insurance Id">
+        <p>Social Insurance ID format is nnn1nnn[A-Z]nnn</p>
 
-        <input type="text" name="date" placeholder="Date">
+        <input type="text" name="taxId" placeholder="Tax Id">
+        <p>Tax Id format - nnnnnnnnnnn(11)</p>
+
+        <input type="text" name="passportValidDate" placeholder="Passport Valid Until">
+        <p>Must be International Date Format tt.mm.yyyy</p>
+
+        <input type="text" name="residencePermitValidDate" placeholder="Residence Permit Valid Until">
+        <p>Must be International Date Format tt.mm.yyyy</p>
+
+        <input type="text" name="workPermitValidDate" placeholder="Work Permit Valid Until">
         <p>Must be International Date Format tt.mm.yyyy</p>
 
         <input type="text" name="maxHours" placeholder="Max Number of Hours">
-        <p>Max Number of hours must be <39.</p>
+        <p>Max Number of hours format is nn,nn and must be <39.</p>
 
-        <input type="text" name="children" placeholder="Number of Children">
-        <p>Number of children must be <20.</p>
+        <input type="text" name="cityOfHealthInsurance" placeholder="City of Health Insurance" value="">
+        <p>City of Health Insurance can't be null or contain 2 consecutive spaces, special characters or have spaces before or after a hyphen.</p>
+
+        <input type="text" name="previousRestaurant" placeholder="Previous Restaurant(City and Address)" value="">
+        <p>Previous Restaurant(City and Address) can't be null or contain 2 consecutive spaces, special characters or have spaces before or after a hyphen.</p>
+
+        <input type="text" name="timeFrom" placeholder="Time from">
+        <p>Time format is nn,nn</p>
+
+        <input type="text" name="timeUntil" placeholder="Time Until">
+        <p>Time format is nn,nn</p>
+
+        <input type="text" name="dateFrom" placeholder="Date From">
+        <p>Must be International Date Format tt.mm.yyyy</p>
+
+        <input type="text" name="dateUntil" placeholder="Date Until">
+        <p>Must be International Date Format tt.mm.yyyy</p>
 
         <input type="text" name="iban" placeholder="IBAN">
-        <p>IBAN must start with 2 Capital Letters followed by digits (No spaces or special Characters)</p>
+        <p>IBAN must start with 2 Capital Letters followed by (10 - 35) digits (No spaces or special Characters)</p>
 
         <input type="text" name="time" placeholder="Time Entered">
         <p>Time must be in military format - 01:00 / 13:45</p>
@@ -45,16 +93,11 @@
         <input type="text" name="wage" placeholder="wage">
         <p>Wage format = (1|2)[0-9],[0-9][0-9]</p>
 
-        <input type="text" name="zip" placeholder="Enter your Zipcode here">
-        <p>Zip must be 5 digits</p>
-
         <input type="text" name="emergencyContactName" placeholder="Emergency Contact">
         <p>Emergency Contact can't contain numbers, invalid charachters or be null</p>
 
       </form>
     </div>
-    <script type="text/javascript" src="regex.js">
-
-    </script>
+    <script type="text/javascript" src="regex.js"></script>
   </body>
 </html>
